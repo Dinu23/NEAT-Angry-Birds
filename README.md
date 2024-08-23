@@ -92,7 +92,7 @@ python neat_main.py --generations 50 --pop_size 200 --add_node 0.4 --target_spec
 ```
 
 ### References
-- [Original NEAT Paper by Kenneth O. Stanley](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf)## Contact
+- [Original NEAT Paper by Kenneth O. Stanley](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf)
 
 ### Contact
 For any inquiries, please contact:
