@@ -61,7 +61,7 @@ def train(generations,
     C3 = 0.5
     delta = 5
 
-
+    p
 
     config = Config(env.observation_space.shape[0], env.action_space.n, lamda=pop_size, 
                     stagnetion_limit=stagnetion_limit, miu_prop= miu_prop, crossover_rate=crossover_rate,
