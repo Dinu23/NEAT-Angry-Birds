@@ -56,34 +56,45 @@ NEAT employs speciation to protect topological innovations and allow them time t
 
 ## Installation
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Dinu23/NEAT-Angry-Birds.git
-   ```
+Clone the repository and install the required dependencies:
 
-2. **Install the required dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+git clone https://github.com/Dinu23/NEAT-Angry-Birds.git
+cd NEAT-Angry-Birds
+pip install -r requirements.txt
+```
 
 ## Usage
 
-### Training the AI
+You can run the NEAT algorithm with various configurations by using the following command-line arguments:
 
-Run the training script to evolve the AI agent:
-
-```bash
-python train.py
+```python
+python neat_main.py --generations 10 --pop_size 100 --add_node 0.3
 ```
 
-## Contact
+### Command-Line Arguments
 
+- `--generations`: Number of generations to run the algorithm (default: 10).
+- `--pop_size`: Population size for each generation (default: 100).
+- `--remove_node`: Probability of removing a node during mutation (default: 0.5).
+- `--remove_connection`: Probability of removing a connection during mutation (default: 0.5).
+- `--add_node`: Probability of adding a new node during mutation (default: 0.3).
+- `--add_connection`: Probability of adding a new connection during mutation (default: 0.3).
+- `--target_species`: Number of target species in the population (default: 20).
+- `--plays`: Number of simulations used to calculate the fitness score (default: 3).
+
+### Example
+
+To run the NEAT algorithm with a population of 200, across 50 generations, and with a higher probability of adding nodes:
+
+```bash
+python neat_main.py --generations 50 --pop_size 200 --add_node 0.4 --target_species 15
+```
+
+### References
+- [Original NEAT Paper by Kenneth O. Stanley](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf)## Contact
+
+### Contact
 For any inquiries, please contact:
 - **Name**: Dinu Catalin Viorel
 - **Email**: viorel.dinu00@gmail.com
-
-
-## References
-
-- [Original NEAT Paper by Kenneth O. Stanley](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf)
-
