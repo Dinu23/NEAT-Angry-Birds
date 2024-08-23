@@ -76,6 +76,12 @@ Run the training script to evolve the AI agent:
 python train.py
 ```
 
+## Contact
+
+For any inquiries, please contact:
+- **Name**: Dinu Catalin Viorel
+- **Email**: viorel.dinu00@gmail.com
+
 
 ## References
 
